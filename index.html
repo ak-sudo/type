@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Animation Using TypeJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I am a <span class="changing-text"></span></h1>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        const typed = new Typed('.changing-text', {
+            strings: ['Programmer', 'Developer', 'Designer', 'Freelancer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+        });
+    </script>
+</body>
+</html>
